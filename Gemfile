@@ -7,6 +7,7 @@ gem 'sinatra'
 gem 'rake'
 gem 'redcarpet'
 gem 'ratom'
+gem 'rack-force_domain'
 
 group :development do
   gem 'shotgun'
