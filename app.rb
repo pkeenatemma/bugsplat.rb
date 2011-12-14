@@ -101,4 +101,8 @@ class App < Sinatra::Application
       erb :entry_page
     end
   end
+
+  post '/ping' do
+    'pong'
+  end
 end
