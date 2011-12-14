@@ -1,0 +1,101 @@
+body
+{
+    font-family: georgia, times, serif;
+}
+
+a:link { 
+	color: #000;
+	text-decoration: none;
+	}
+a:visited { 
+	color: #000;
+	text-decoration: none;
+	}
+a:hover { 
+	color: #000;
+	text-decoration: underline;
+	}
+a:active { 
+	color: #000;
+	text-decoration: underline;
+	}
+
+.permalink { display: none; }
+
+#container
+{
+	margin: 0 auto;
+	width: 900px;
+	background: #fff;
+}
+
+#header
+{
+	background: #fff;
+	padding: 20px 0;
+    margin: 0;
+}
+
+#header h1 { font-family: 'Droid Sans', helvetica, arial, sans-serif; margin: 0; font-size: 230% }
+
+#content-container
+{
+	float: left;
+	width: 900px;
+	background: #fff;
+}
+
+#content
+{
+	clear: left;
+	float: left;
+	width: 800px;
+	padding: 20px 0;
+	margin: 0 0 0 30px;
+	display: inline;
+}
+
+
+
+#aside
+{
+  display:none;
+}
+
+h2 { font-family: 'Droid Sans', helvetica, arial, sans-serif; margin: 0; padding-bottom: 5px; }
+h3 { font-family: 'Droid Sans', helvetica, arial, sans-serif; margin: 1em 0; padding-bottom: 5px; }
+h4 { font-family: 'Droid Sans', helvetica, arial, sans-serif; margin: 1em 0; padding-bottom: 5px; }
+
+#footer
+{
+	clear: left;
+	background: #fff;
+	text-align: left;
+	padding: 20px;
+	height: 1%;
+    font-size: 60%;
+}
+
+div.entry
+{
+  margin-bottom: 2em;
+}
+
+hr.separator
+{
+  margin-bottom: 3em;
+  margin-top: 2em;
+  display: block;
+  color: #999;
+  border: 0;
+  text-align: center;
+}
+
+hr.separator:after {
+  content: "....";
+  letter-spacing: 2em;
+}
+
+p.date {
+  font-size: 75%;
+}

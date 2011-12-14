@@ -1,0 +1,5 @@
+<ul>
+  <% @archive_pages.each do |page| %>
+  <li><a href="<%= page.html_path %>"><%= page.date.strftime('%Y-%m-%d') %> - <%= page['title'] %></a></li>
+  <% end %>
+</ul>

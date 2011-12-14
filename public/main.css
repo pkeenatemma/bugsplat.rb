@@ -1,0 +1,117 @@
+body
+{
+    font-family: georgia, times, serif;
+}
+
+h4.print-only { display: none; }
+
+a:link { 
+	color: #5555AA;
+	text-decoration: none;
+	}
+a:visited { 
+	color: #5555AA;
+	text-decoration: none;
+	}
+a:hover { 
+	color: #8888AA;
+	text-decoration: underline;
+	}
+a:active { 
+	color: #5555AA;
+	text-decoration: underline;
+	}
+
+#container
+{
+	margin: 0 auto;
+	width: 900px;
+	background: #fff;
+}
+
+#header
+{
+	background: #fff;
+	padding: 20px 0;
+    margin: 0 0 0 28px;
+}
+
+#header h1 { font-family: 'Droid Sans', helvetica, arial, sans-serif; margin: 0; font-size: 230% }
+
+#content-container
+{
+	float: left;
+	width: 900px;
+	background: #fff;
+}
+
+#content
+{
+	clear: left;
+	float: left;
+	width: 560px;
+	padding: 20px 0;
+	margin: 0 0 0 30px;
+	display: inline;
+}
+
+
+
+#aside
+{
+	float: right;
+	width: 240px;
+	padding: 20px 0;
+	margin: 0 20px 0 0;
+    padding-bottom: 82px;
+	display: inline;
+    font-family: 'Droid Sans', helvetica, arial, sans-serif;
+    background-image: url("bugsplat-2.png");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+}
+
+h2 { font-family: 'Droid Sans', helvetica, arial, sans-serif; margin: 0; padding-bottom: 5px; }
+h3 { font-family: 'Droid Sans', helvetica, arial, sans-serif; margin: 1em 0; padding-bottom: 5px; }
+h4 { font-family: 'Droid Sans', helvetica, arial, sans-serif; margin: 1em 0; padding-bottom: 5px; }
+
+#aside ul { margin: 0; padding: 0; }
+#aside ul li {
+  list-style-type: none;
+  margin: 0.5em 0;
+  padding: 0;
+}
+
+#footer
+{
+	clear: left;
+	background: #fff;
+	text-align: left;
+	padding: 20px;
+	height: 1%;
+    font-size: 60%;
+}
+
+div.entry
+{
+  margin-bottom: 2em;
+}
+
+hr.separator
+{
+  margin-bottom: 3em;
+  margin-top: 2em;
+  display: block;
+  color: #999;
+  border: 0;
+  text-align: center;
+}
+
+hr.separator:after {
+  content: "....";
+  letter-spacing: 2em;
+}
+
+p.date {
+  font-size: 75%;
+}

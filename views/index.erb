@@ -1,0 +1,9 @@
+<% @index_pages.each do |page| %>
+<div class="entry">
+  <h2><a href="<%= page.html_path %>"><%= page['title'] %></a></h2>
+  <%= page.render_before_fold %>  
+  <a href="<%= page.html_path %>">Read More</a> - <a class="permalink" href="<%= page.html_path %>#disqus_thread">permalink</a>
+  <hr class="separator">
+</div>
+<% end %>
+<a href="archive.html">Older Entries</a>

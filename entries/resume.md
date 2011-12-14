@@ -1,0 +1,119 @@
+Title: Resume
+Order: 1
+Id:    resume
+
+### Experience ##
+
+#### Platform Developer, April 2011 - Current ###
+
+[Emma](http://www.myemma.com), Portland, OR
+
+* Ported the main application to a web-service-style backend using
+  Python, WebOB, PostgreSQL, and redis.
+
+* Built a search module that consumes a json-based search description,
+  builds an equivalent SQL query, and executes the query on a sharded
+  PostgreSQL database system.
+
+#### Software Developer, January 2007 - April 2011 ###
+
+[Rentrak Corporation](http://www.rentrak.com), Portland, OR
+
+* Designed, developed, and deployed two different demographics systems
+  for linear television that have set the direction of all future demographics
+  systems at Rentrak. These systems overlay postal- and household-level
+  segmentation on top of hundreds of billions of television view transactions.
+
+* Developed a SQL-like language that compiles to C++ using Perl and
+  [Parse::RecDescent](http://search.cpan.org/dist/Parse-RecDescent) to
+  enable internal users to query the view repository.
+
+* Designed and deployed a system for distributed job processing using
+  [Gearman](http://gearman.org) which will form the core for all new
+  distributed or delayed job processing company-wide.
+
+* Designed a new product from scratch with another developer on a three
+  month contract, focusing on the backend data processing. Built a DSL-like
+  system within Perl for succinct summary table definition which allows
+  developers to create new summary tables quickly and with very low maintenance
+  overhead.
+  
+* Wrote one-time and repeatable data extraction and analysis programs
+  for the CIO and the research department to better understand hundreds of billions 
+  of television view transactions. 
+
+* Worked with another developer and the system administration team to
+  convert the entire company from subversion to git. Internal repos are
+  hosted using [gitolite](http://github.com/sitaramc/gitolite).
+  
+* Built a video player using Adobe ActionScript and Flex that shows
+  DVR-style recordings with viewership data overlays.
+
+* Implemented an experimental perl-based framework on top of
+  [Hadoop](http://hadoop.apache.org/) and HDFS that was used to test some
+  performance hypotheses.
+
+#### Software Development Intern, Sept 2006 - Dec 2006
+
+Quad Graphics and University of Wisconsin-Whitewater Management and Computer Systems
+
+* Enhanced Ruby on Rails' ActiveRecord support for Sybase
+* Extended ActiveRecord's ability to generate model objects from
+  arbitrary database tables.
+* Used these new capabilities to enable repeatable unit testing
+  of database-driven .Net applications on developers' desktops by
+  pulling only the needed sets of test data from a central database.
+  
+#### Research Assistant, Fall 2005 - Spring 2006
+
+Aurora Health Care and University of Wisconsin - Whitewater Management Computer Systems
+
+* Implemented a data aggregation system among several dissimilar data silos
+  using JSP, servlets, Lucene, jUnit, ant, and MS SQL Server. Silos did not share 
+  primary keys and contained similar but not identical profile information, so the 
+  system guided a user through a three step selection and matching process.
+  
+#### Helpdesk Intern, Summer 2006
+
+HouseValues.Com, Kirkland, Washington
+
+* Replaced an existing computer imaging system based on usb harddrives with a network-based
+  system using BartPE and Ghost.
+* Maintained a comprehensive inventory of 550 desktops and 50 servers.
+* Wrote and maintained system administration scripts in Python and Javascript using
+  Windows Scripting Host
+* Assisted in day-to-day helpdesk activies
+
+### Side Projects
+
+* [ProcLaunch](http://github.com/peterkeen/proclaunch), a pure perl user-space process manager.
+* [bugsplat.info](http://bugsplat.info), my personal programming and tech related blog.
+* [remindlyo](http://www.remindlyo.com), a phone call follow up and reminder service
+
+
+### Education
+
+#### Bachelor of Science in Management Computer Systems
+
+Computer Science Minor  
+University of Wisconsin - Whitewater  
+Graduated December 2006
+
+* Completed a year-long project for a major bank in Milwaukee that implemented a
+  debit card reward processing and redemption system using ASP.NET, VB.NET and SQL Server 2000.
+  
+### Skills
+
+* Perl, C++, HTML/CSS, Javascript, Java, Python, Ruby, Shell scripting
+* Test-driven Development, Pair Programming
+* Git, SVN, CVS
+* Linux, Mac OS X
+* PostgreSQL, MySQL
+
+### Achievements and Service
+
+#### Eagle Scout
+
+Boy Scouts of America Troop 417, Milton, Wisconsin  
+Awarded Summer 2002  
+Planned and led a project to build and install benches in an area park.

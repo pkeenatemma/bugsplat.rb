@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang=en>
+  <head>
+    <meta charset="utf-8">
+    <title><%= title %> bugsplat</title>
+    <link rel="stylesheet" type="text/css" href="/main.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="/print.css" media="print">
+    <link rel=alternate type=application/atom+xml href="index.xml"> 
+    <link rel=”shortcut icon” href=”favicon.ico” mce_href=”/favicon.ico”/>
+    <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+    <link rev="canonical" href="{{ShortUrl}}" />
+
+    <script src="/highlight.pack.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="/github.css">
+
+    <meta name="google-site-verification" content="TrfmxNXy4NvuQkn-ijPJ6suggiCgRHNVYEKfUT3oB7I" />
+    <script type="text/javascript">
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+      try {
+        var pageTracker = _gat._getTracker("UA-5663087-2");
+        pageTracker._trackPageview();
+      } catch(err) {}
+    </script>
+
+  <script> 
+    hljs.tabReplace = '    ';
+    hljs.initHighlightingOnLoad();
+  </script> 
+
+  </head>
+  <body>
+
+  <div id="container">
+	<div id="header">
+		<h1>
+			<a href="index.html">Bugsplat</a>
+		</h1>
+		<h4 class="print-only">
+    		by <a href="mailto:pete@bugsplat.info">Pete Keen</a>
+		</h4>
+
+	</div>
+	<div id="navigation">
+	</div>
+	<div id="content-container">
+		<div id="aside">
+			<h4>
+				by <a href="mailto:pete@bugsplat.info">Pete Keen</a>
+			</h4>
+            <ul id="links">
+              <li><a href="archive.html">Archives</a></li>
+              <%= link_list %>
+              <li><a href="https://www.fivepad.me/">FivePad</a></li>
+              <li><a href="http://www.remindlyo.com/">Remindlyo</a></li>
+              <li><a href="http://flickr.com/photos/zrail">Flickr</a></li>
+              <li><a href="http://twitter.com/zrail">Twitter</a></li>
+              <li><a href="http://github.com/peterkeen">GitHub</a></li>
+            </ul>
+		</div>
+		<div id="content">
+          <%= yield %>
+		</div>
+		<div id="footer">
+			&copy; <a href="mailto:pete@bugsplat.info">Pete Keen</a> | <a href="colophon.html">Colophon</a>
+		</div>
+	</div>
+  </div>
+<script type="text/javascript">
+//<![CDATA[
+(function() {
+	var links = document.getElementsByTagName('a');
+	var query = '?';
+	for(var i = 0; i < links.length; i++) {
+	if(links[i].href.indexOf('#disqus_thread') >= 0) {
+		query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+	}
+	}
+	document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/bugsplat/get_num_replies.js' + query + '"></' + 'script>');
+})();
+//]]>
+</script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script type="text/javascript" src="/jquery.relatize_date.js"></script>
+<script type="text/javascript">
+$(document).ready(function () {
+    $('.bbpTweet .timestamp a[title]').each(function (i, tstamp_node) {
+        var date_parts = $(tstamp_node).attr('title').split(/ /);
+        var new_date_parts = [date_parts[1], date_parts[2] + ",", date_parts[5], date_parts[3], date_parts[4]];
+        var new_date_stamp = new_date_parts.join(' ');
+        var tstamp = new Date(new_date_stamp);
+        $(tstamp_node).text($.relatizeDate.timeAgoInWords(tstamp));
+    });
+});
+</script>
+  </body>
+</html>
