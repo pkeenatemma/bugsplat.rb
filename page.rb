@@ -44,8 +44,8 @@ class Page
   end
 
   def parse_body(body_text)
-    @body = body_text
     @before_fold, after_fold = body_text.split("--fold--")
+    @body = body_text.sub("--fold--", '')
   end
 
   def self.normalize_name(page)
